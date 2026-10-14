@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasan Ahmed — Engineering Student & Developer</title>
+    
+    <!-- Inline theme initializer to avoid layout flash -->
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('hasan_theme_preference') || localStorage.getItem('theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = (stored === 'light' || stored === 'dark') ? stored : (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Meta tags -->
+    <meta name="description" content="Hasan Ahmed is an engineering student at SRM Madurai interested in web development, intuitive interface design, software applications, and connected IoT systems." />
+    <meta name="keywords" content="Hasan Ahmed, Developer, Engineering Student, SRM Madurai, Web Development, UI/UX, Full-Stack, IoT, Embedded Systems" />
+    <meta name="author" content="Hasan Ahmed" />
+    <meta name="theme-color" content="#FAFAF8" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hasan Ahmed — Engineering Student & Developer" />
+    <meta property="og:description" content="Building thoughtful digital experiences. Portfolio of Hasan Ahmed, SRM Madurai." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hasan Ahmed — Engineering Student & Developer" />
+    <meta name="twitter:description" content="Building thoughtful digital experiences. Portfolio of Hasan Ahmed, SRM Madurai." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts: Manrope (Headings), Inter (Body), JetBrains Mono (Technical) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-background text-text-primary font-sans antialiased selection:bg-accent-subtle selection:text-accent-primary min-h-screen overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

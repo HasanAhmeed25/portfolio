@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Minimalist Light Canvas -->
+  <rect width="64" height="64" rx="14" fill="#FAFAF8" stroke="#E5E7E2" stroke-width="2" />
+  
+  <!-- Architectural Geometric "HA" Monogram -->
+  <path d="M18 18 L18 46" stroke="#202321" stroke-width="4" stroke-linecap="square" />
+  <path d="M46 18 L46 46" stroke="#202321" stroke-width="4" stroke-linecap="square" />
+  <path d="M18 32 L46 32" stroke="#202321" stroke-width="3.5" />
+  
+  <!-- Modern Geometric Accent: Apex of A with Blue Pivot -->
+  <path d="M18 18 L32 10 L46 18" stroke="#315DEB" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" />
+  <circle cx="32" cy="32" r="3" fill="#315DEB" />
+</svg>
